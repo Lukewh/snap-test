@@ -1,1 +1,18 @@
-name: snap-test
+name: test-snap-lukewh
+version: 0.0.1
+summary: Just a test.
+description: |
+  A test!
+confinement: devmode
+base: core18
+parts:
+  test-snap-lukewh:
+    plugin: nodejs
+    source: .
+    build-override: |
+      echo "console.log('hi');" > index.js
+      snapcraftctl build
+
+apps:
+  test-snap-lukewh:
+    command: test-snap-lukewh
