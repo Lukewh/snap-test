@@ -1,0 +1,9 @@
+{
+  "name": "test-snap-lukewh",
+  "version": "0.0.1",
+  "description": "A test snap",
+  "main": "test-snap-lukewh.js",
+  "bin": {
+    "test-snap-lukewh": "test-snap-lukewh.js"
+  }
+}
