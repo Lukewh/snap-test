@@ -9,7 +9,7 @@ parts:
   test-snap-lukewh:
     plugin: nodejs
     source: .
-    build-override: |
+    override-build: |
       echo "console.log('hi');" > index.js
       snapcraftctl build
 
